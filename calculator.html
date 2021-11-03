@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+ <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body class= "desigen" >
+        <FORM name="calculator" action="">
+            <input name="txt1" id="myIput" type="Text" size=60 value="0" class="start"  readonly>
+            <table>
+                <tr>
+                    <td><input   class="button" type="Button" value="  7  " onclick="NumPressed(7)"></td>
+                    <td><input  class="button" type="Button" value="  8  " onclick="NumPressed(8)"></td>        
+                    <td><input class="button" type="Button" value="  9  " onclick="NumPressed(9)"></td>
+                    <td><input class="button button1"  type="Button" value="  AC " onclick="BackSpace ()"></td>
+                    <td><input class="button button1"  type="Button" value="  C " onclick="Clear()"></td>
+                </tr>
+                <tr>
+                    <td><input  class="button button1 " type="Button" value="  4" onclick="NumPressed(4)"></td>
+                    <td><input  class="button button1 "  type="Button" value="  5   "onclick="NumPressed(5)"></td>        
+                    <td><input  class="button" type="Button" value="  6  " onclick="NumPressed(6)"></td>
+                    <td><input  class="button button1" type="Button" value="  *  " onclick="Operation('*')"></td>
+                     </tr>
+                <tr>
+                    <td><input  class="button"  type="Button" value="  1  " onclick="NumPressed(1)"></td>
+                    <td><input  class="button button1" type="Button" value="  2  " onclick="NumPressed(2)"></td>        
+                    <td><input  class="button"  type="Button" value="  3  " onclick="NumPressed(3)"></td>
+                     <td><input class="button" type="Button" value="   .  " onclick="Decimal()"></td>  
+            
+                      </tr> </table> 
+                    
+           <tr>
+            <input  class="button button4 " type="Button " value="  0  " onclick="NumPressed(0)">
+             <td><input  class="button button3"  type="Button" value="  +  " onclick="Operation('+')"></td>
+              
+                       
+           <td><input   class="button button3"  type="Button" value="   -   " onclick="Operation('-')"></td>
+               
+               <input   class="button button1 " type="Button" value="   /   " onclick="Operation('/')"></tr>
+             
+          
+               <input   class="button button2" type="Button" value="  =  " onclick="Operation('=')">
+               
+        </FORM>
+    <script src="app.js"></script>
+       
+    </body>
+</html>
